@@ -16,7 +16,7 @@ Note: This may cause some elements of the UI to look lower quality or may increa
 Enable ConfigurationSaving in the CreateWindow function
 Choose an appropiate FileName in the CreateWindow function
 Choose an unique flag identifier for each supported element you create
-Place Rayfield:LoadConfiguration() at the bottom of all your code
+Place ``Rayfield:LoadConfiguration()`` at the bottom of all your code
 Rayfield will now automatically save and load your configuration
 
 ## Creating a Window
