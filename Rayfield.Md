@@ -24,7 +24,7 @@ Rayfield will now automatically save and load your configuration
 local Window = Rayfield:CreateWindow({
    Name = "Rayfield Example Window",
    LoadingTitle = "Rayfield Interface Suite",
-   LoadingSubtitle = "by Jhon Cliford",
+   LoadingSubtitle = "by Browhat",
    ConfigurationSaving = {
       Enabled = true,
       FolderName = nil, -- Create a custom folder for your hub/game
