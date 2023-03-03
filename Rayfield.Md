@@ -58,7 +58,7 @@ local Section = Tab:CreateSection("Section Example")
 ## Updating a Section
 ```lua
 Section:Set("Section Example")
-```lua
+```
 ## Destroying the Interface
 ```lua
 Rayfield:Destroy()
