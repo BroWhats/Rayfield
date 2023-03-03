@@ -1,7 +1,7 @@
 # Rayfiel Ui Library
 
 ## Booting the Library
-```
+```lua
 local Rayfield = loadstring(game:HttpGet("https://raw.githubusercontent.com/BroWhats/Rayfield/main/privatesource",true))()
 ```
 ## Secure Mode
@@ -20,7 +20,7 @@ Place ``Rayfield:LoadConfiguration()`` at the bottom of all your code
 Rayfield will now automatically save and load your configuration
 
 ## Creating a Window
-```
+```lua
 local Window = Rayfield:CreateWindow({
    Name = "Rayfield Example Window",
    LoadingTitle = "Rayfield Interface Suite",
@@ -48,23 +48,23 @@ local Window = Rayfield:CreateWindow({
 })
 ```
 ## Creating a Tab
-```
+```lua
 local Tab = Window:CreateTab("Tab Example", 4483362458) -- Title, Image
 ```
 ## Creating a Section
-```
+```lua
 local Section = Tab:CreateSection("Section Example")
 ```
 ## Updating a Section
-```
+```lua
 Section:Set("Section Example")
-```
+```lua
 ## Destroying the Interface
-```
+```lua
 Rayfield:Destroy()
 ```
 ## Notifying the user
-```
+```lua
 Rayfield:Notify({
    Title = "Notification Title",
    Content = "Notification Content",
@@ -82,7 +82,7 @@ Rayfield:Notify({
 ```
 ## Creating a Button
 
-```
+```lua
 local Button = Tab:CreateButton({
    Name = "Button Example",
    Callback = function()
@@ -91,11 +91,11 @@ local Button = Tab:CreateButton({
 })
 ```
 ## Updating a Button
-```
+```lua
 Button:Set("Button Example")
 ```
 ## Creating a Toggle
-```
+```lua
 local Toggle = Tab:CreateToggle({
    Name = "Toggle Example",
    CurrentValue = false,
@@ -107,11 +107,11 @@ local Toggle = Tab:CreateToggle({
 })
 ```
 ## Updating a Toggle
-```
+```lua
 Toggle:Set(false)
 ```
 ## Creating a Color Picker
-```
+```lua
 local ColorPicker = Tab:CreateColorPicker({
     Name = "Color Picker",
     Color = Color3.fromRGB(255,255,255),
@@ -123,11 +123,11 @@ local ColorPicker = Tab:CreateColorPicker({
 })
 ```
 ## Updating a Color Picker
-```
+```lua
 ColorPicker:Set(Color3.fromRGB(255,255,255)
 ```
 ## Creating a Slider
-```
+```lua
 local Slider = Tab:CreateSlider({
    Name = "Slider Example",
    Range = {0, 100},
@@ -142,11 +142,11 @@ local Slider = Tab:CreateSlider({
 })
 ```
 ## Updating a Slider
-```
+```lua
 Slider:Set(10) -- The new slider integer value
 ```
 ## Creating an Adaptive Input (TextBox)
-```
+```lua
 local Input = Tab:CreateInput({
    Name = "Input Example",
    PlaceholderText = "Input Placeholder",
@@ -158,7 +158,7 @@ local Input = Tab:CreateInput({
 })
 ```
 ## Creating a Dropdown menu
-```
+```lua
 local Dropdown = Tab:CreateDropdown({
    Name = "Dropdown Example",
    Options = {"Option 1","Option 2"},
@@ -171,13 +171,13 @@ local Dropdown = Tab:CreateDropdown({
 })
 ```
 ## Updating a Dropdown
-```
+```lua
 Dropdown:Set("Option 2") -- The new option value
 ```
 ## Check the value of an existing element
 To check the current value of an existing element, using the variable, you can do ``ElementName.CurrentValue,`` if it’s a keybind or dropdown, you will need to use ``KeybindName.CurrentKeybind`` or ``DropdownName.CurrentOption`` You can also check it via the flags from Rayfield.Flags
 ## Creating a Keybind
-```
+```lua
 local Keybind = Tab:CreateKeybind({
    Name = "Keybind Example",
    CurrentKeybind = "Q",
@@ -190,22 +190,22 @@ local Keybind = Tab:CreateKeybind({
 })
 ```
 ## Updating a Keybind
-```
+```lua
 Keybind:Set("RightCtrl") -- Keybind (string)
 ```
 ## Creating a Label
-```
+```lua
 local Label = Tab:CreateLabel("Label Example")
 ```
 ## Updating a Label
-```
+```lua
 Label:Set("Label Example")
 ```
 ## Creating a Paragraph
-```
+```lua
 local Paragraph = Tab:CreateParagraph({Title = "Paragraph Example", Content = "Paragraph Example"})
 ```
 ## Updating a Paragraph
-```
+```lua
 Paragraph:Set({Title = "Paragraph Example", Content = "Paragraph Example"})
 ```
